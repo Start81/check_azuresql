@@ -8,7 +8,7 @@
 # Last Modified : 10/11/2023
 # Modified By   : DESMAREST JULIEN (Start81)
 # Description   : Check Azure SQL database
-# Depends On    : REST::Client, Data::Dumper, DateTime, Getopt::Long
+# Depends On    : REST::Client, Data::Dumper, DateTime, Json, Monitoring::Plugin, File::Basename, Readonly
 #
 # Changelog:
 #    Legend:
@@ -25,10 +25,8 @@
 use REST::Client;
 use Data::Dumper;
 use JSON;
-use Encode qw(decode encode);
 use utf8;
 use DateTime;
-use Getopt::Long;
 use File::Basename;
 use strict;
 use warnings;
