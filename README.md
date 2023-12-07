@@ -4,12 +4,12 @@ Check if an azuresql database is up, get a metric or check the longTerm Retentio
 
 ### prerequisites
 
-This script uses theses libs : REST::Client, Data::Dumper, DateTime, Getopt::Long, JSON, Monitoring::Plugin
+This script uses theses libs : REST::Client, Data::Dumper, DateTime, JSON, Monitoring::Plugin
 
 to install them type :
 
 ```
-sudo cpan  REST::Client Data::Dumper Encode  Getopt::Long JSON DateTime File::Basename Readonly Getopt::Long Monitoring::Plugin
+sudo cpan  REST::Client Data::Dumper JSON DateTime File::Basename Readonly Monitoring::Plugin
 ```
 
 ### use case
