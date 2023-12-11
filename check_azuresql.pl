@@ -224,7 +224,8 @@ my $o_database_name = $np->opts->databasename;
 my $o_time_interval = $np->opts->time_interval;
 my $o_backup = $np->opts->backup;
 my $o_region = $np->opts->region;
-my $o_zeroed = $np->opts->zeroed  if (defined $np->opts->zeroed);
+my $o_zeroed;
+$o_zeroed = $np->opts->zeroed  if (defined $np->opts->zeroed);
 $o_verb = $np->opts->verbose if (defined $np->opts->verbose);
 if (defined($o_backup)) {
     if (!defined($o_region)) {
